@@ -1,0 +1,55 @@
+/**
+* Makes a centered block item
+**/
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin background($imgpath, $width, $height) {
+    background: {
+        image: url($imgpath);
+        position: 0 0;
+        background-size: $width $height;
+        repeat: no-repeat;
+    }
+}
+
+/**
+* Creates border-radius
+**/
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+/**
+* For debugging. Turn variable to false/true
+**/
+@mixin divoutline {
+	@if($debugging) {
+		outline: 1px solid black;
+	}
+}
+
+/**
+* Loops through array of colors to create heading effect
+**/
+@mixin colorSpan {
+	span{
+		padding: 2px 5px 2px 5px;
+		@for $i from 1 through length($colors) {
+			&:nth-of-type(#{$i}) {
+		  	background-color: nth($colors, $i);
+		  	color: complement(nth($colors, $i));
+			}
+		}
+	}
+}
+
+/**
+* Adds drop-shadow when included
+**/
+@mixin dropshadow {
+	box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}

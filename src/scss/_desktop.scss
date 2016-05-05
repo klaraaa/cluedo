@@ -1,0 +1,60 @@
+body{
+	background-color: darken($wrapBkg, 30%);
+  .wrapper{
+    @extend .btn;
+    margin: 20px auto;
+    padding: 10px;
+		width: $wrapperWidth;
+		@include center-block;
+    @include dropshadow;
+    background-color: lighten($wrapBkg, 40%);
+    #board{
+      border: 3px solid black;
+      position: relative;
+      margin: 0px auto;
+      @include background('../img/board.svg', $boardSize, $boardSize);
+      @include divoutline;
+      width: $boardSize
+      height: $boardSize;
+      display: flex;
+      flex-direction: row;
+      background-color: lighten($wrapBkg, 20%);
+      #player{
+        // float: right;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        position: absolute;
+        left: $startPos;
+        top: $startPos;
+        margin: -50px -50px;
+      } 
+      #donutList{
+       @include divoutline;
+        flex:1;
+      }
+      #cost{
+        margin: 0px 20px 0px 20px;
+        text-align: center;
+        flex:1;
+        @include divoutline;
+        background-color: lighten($wrapBkg, 50%);
+        @include rounded-corners(10px);
+      }
+  	}
+  }
+}
+
+nav ul li {
+  .menuLink {
+    &:hover {
+      color: gray;
+      background-color: lighten($wrapBkg, 25%);
+    }
+  }
+}
+
+.btn {
+	@include rounded-corners(10px);
+}

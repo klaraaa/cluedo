@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g>
+	<rect fill="#FF7BAC" width="160" height="160"/>
+	<rect x="28.678" y="62.172" fill="none" width="99.421" height="35.656"/>
+	<text transform="matrix(0.9971 0 0 1 52.6826 77.6621)" font-family="'DINAlternate-Bold'" font-size="21.7562">HALL</text>
+</g>
+<g>
+	<rect x="440" fill="#FF931E" width="160" height="160"/>
+	<rect x="470.289" y="62.172" fill="none" width="99.422" height="35.656"/>
+	<text transform="matrix(0.9971 0 0 1 479.2891 77.6621)" font-family="'DINAlternate-Bold'" font-size="21.7562">LIBRARY</text>
+</g>
+<g>
+	<rect x="440" y="440" fill="#7AC943" width="160" height="160"/>
+	<rect x="470.289" y="509.438" fill="none" width="99.422" height="35.656"/>
+	<text transform="matrix(0.9971 0 0 1 480.4551 524.9268)" font-family="'DINAlternate-Bold'" font-size="21.7562">LOUNGE</text>
+</g>
+<g>
+	<rect y="440" fill="#3FA9F5" width="160" height="160"/>
+	<rect x="28.678" y="509.438" fill="none" width="99.421" height="35.656"/>
+	<text transform="matrix(0.9971 0 0 1 36.8267 524.9268)" font-family="'DINAlternate-Bold'" font-size="21.7562">KITCHEN</text>
+</g>
+<g>
+	<defs>
+		<path id="XMLID_1_" d="M44.983,11.555C40.343,7.19,33.334,6.603,27.58,8.906c-3.967,0.093-7.75,0.631-11.152,2.908
+			c-3.786,2.531-5.856,6.857-7.047,11.109c-2.404,8.584-0.007,17.614,7.689,22.443c6.547,4.108,17.132,4.893,24.586,3.513
+			c8.05-1.49,10.108-10.478,10.341-17.399C52.233,24.429,50.257,16.517,44.983,11.555z"/>
+	</defs>
+	<use xlink:href="#XMLID_1_"  overflow="visible"/>
+	<clipPath id="XMLID_6_">
+		<use xlink:href="#XMLID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#XMLID_6_)" fill="#FFFFFF" d="M22.158,18.105c-4.953,0-4.953,7.68,0,7.68S27.11,18.105,22.158,18.105z"/>
+	<path clip-path="url(#XMLID_6_)" fill="#FFFFFF" d="M39.245,17.338c-4.952,0-4.952,7.68,0,7.68S44.197,17.338,39.245,17.338z"/>
+	<path clip-path="url(#XMLID_6_)" fill="#FFFFFF" d="M39.19,33.404c-3.052,7.389-15.559,0.618-18.517-3.605
+		c-2.818-4.023-9.48-0.191-6.631,3.876c7.192,10.264,26.583,16.225,32.554,1.771C48.487,30.869,41.054,28.894,39.19,33.404z"/>
+</g>
+<g>
+	<defs>
+		<path id="XMLID_2_" d="M494.021,7.216c-4.641-4.365-11.648-4.953-17.402-2.649c-3.967,0.093-7.75,0.631-11.152,2.908
+			c-3.786,2.531-5.856,6.857-7.048,11.109c-2.403,8.584-0.007,17.614,7.69,22.443c6.547,4.108,17.132,4.893,24.586,3.513
+			c8.051-1.49,10.107-10.478,10.341-17.399C501.271,20.089,499.294,12.178,494.021,7.216z"/>
+	</defs>
+	<use xlink:href="#XMLID_2_"  overflow="visible"/>
+	<clipPath id="XMLID_7_">
+		<use xlink:href="#XMLID_2_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#XMLID_7_)" fill="#FFFFFF" d="M471.195,13.766c-4.952,0-4.952,7.68,0,7.68S476.147,13.766,471.195,13.766z"/>
+	<path clip-path="url(#XMLID_7_)" fill="#FFFFFF" d="M488.282,12.999c-4.951,0-4.951,7.68,0,7.68
+		C493.235,20.678,493.235,12.999,488.282,12.999z"/>
+	<path clip-path="url(#XMLID_7_)" fill="#FFFFFF" d="M488.228,29.065c-3.052,7.389-15.559,0.618-18.517-3.605
+		c-2.818-4.023-9.48-0.191-6.631,3.876c7.191,10.264,26.583,16.225,32.554,1.771C497.524,26.529,490.091,24.555,488.228,29.065z"/>
+</g>
+<g>
+	<defs>
+		<path id="XMLID_3_" d="M73.324,465.511c-4.641-4.364-11.648-4.952-17.402-2.649c-3.967,0.094-7.75,0.632-11.152,2.908
+			c-3.786,2.531-5.856,6.857-7.048,11.109c-2.403,8.584-0.007,17.613,7.69,22.443c6.547,4.107,17.132,4.893,24.586,3.514
+			c8.051-1.49,10.107-10.479,10.341-17.399C80.574,478.385,78.598,470.473,73.324,465.511z"/>
+	</defs>
+	<use xlink:href="#XMLID_3_"  overflow="visible"/>
+	<clipPath id="XMLID_8_">
+		<use xlink:href="#XMLID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#XMLID_8_)" fill="#FFFFFF" d="M50.499,472.061c-4.952,0-4.952,7.681,0,7.681S55.451,472.061,50.499,472.061z"
+		/>
+	<path clip-path="url(#XMLID_8_)" fill="#FFFFFF" d="M67.586,471.293c-4.951,0-4.951,7.68,0,7.68
+		C72.539,478.973,72.539,471.293,67.586,471.293z"/>
+	<path clip-path="url(#XMLID_8_)" fill="#FFFFFF" d="M67.531,487.359c-3.052,7.39-15.559,0.618-18.517-3.604
+		c-2.818-4.022-9.48-0.19-6.631,3.876c7.191,10.264,26.583,16.225,32.554,1.771C76.828,484.824,69.395,482.85,67.531,487.359z"/>
+</g>
+<g>
+	<defs>
+		<path id="XMLID_4_" d="M489.476,452.256c-4.641-4.364-11.648-4.952-17.402-2.649c-3.967,0.094-7.75,0.632-11.152,2.908
+			c-3.786,2.531-5.856,6.857-7.048,11.109c-2.403,8.584-0.007,17.613,7.69,22.443c6.547,4.107,17.132,4.893,24.586,3.514
+			c8.051-1.49,10.107-10.479,10.341-17.399C496.726,465.13,494.749,457.218,489.476,452.256z"/>
+	</defs>
+	<use xlink:href="#XMLID_4_"  overflow="visible"/>
+	<clipPath id="XMLID_9_">
+		<use xlink:href="#XMLID_4_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#XMLID_9_)" fill="#FFFFFF" d="M466.65,458.806c-4.952,0-4.952,7.681,0,7.681S471.603,458.806,466.65,458.806z
+		"/>
+	<path clip-path="url(#XMLID_9_)" fill="#FFFFFF" d="M483.737,458.038c-4.951,0-4.951,7.68,0,7.68
+		C488.69,465.718,488.69,458.038,483.737,458.038z"/>
+	<path clip-path="url(#XMLID_9_)" fill="#FFFFFF" d="M483.683,474.104c-3.052,7.39-15.559,0.618-18.517-3.604
+		c-2.818-4.022-9.48-0.19-6.631,3.876c7.191,10.264,26.583,16.225,32.554,1.771C492.979,471.569,485.546,469.595,483.683,474.104z"
+		/>
+</g>
+</svg>

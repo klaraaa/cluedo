@@ -1,0 +1,396 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newId"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"las",
+				"lastUsedXMLiD"
+			],
+			[
+				"ne",
+				"newId"
+			],
+			[
+				"arr",
+				"arrID"
+			],
+			[
+				"xml",
+				"xmlIDs"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"cur",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"slide",
+				"slideshowimg"
+			],
+			[
+				"next",
+				"nextImg"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"curr",
+				"currentID"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"thum",
+				"thumbs"
+			],
+			[
+				"sec",
+				"seconds"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"last",
+				"lastGame"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"quest",
+				"questionLoader"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_desktop.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_tablet.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/css",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/scss"
+	],
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/scss/_mobile.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/scss/style.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/scss/_variables.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/sass.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sass_grunt_assignment/scss/_normalize.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sassexempel/scss/style.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/sassexempel/scss/_varibles.scss",
+		"/Users/Klara/Development/Javascript/ass2/public/index.php",
+		"/Users/Klara/Development/Javascript/ass2/public/images.xml",
+		"/Users/Klara/Development/Javascript/ass2/public/images.js",
+		"/Users/Klara/Development/Javascript/ass2/public/style.css",
+		"/Users/Klara/Development/Javascript/ass2/public/images.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/quiz/quiz.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/quiz/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/dynamiskwebbutveckling/javascript/quiz/questions.json"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"imagelista"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_desktop.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "_tablet.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sass.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 122.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

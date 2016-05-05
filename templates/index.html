@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Cluedo</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Desc">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Firstname Lastname">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<button id="start" class="btn">Create new game</button>
+		<button id="guess" class="btn hide">Guess</button>
+		<button id="blame" class="btn hide">Blame</button>
+		<!-- <nav class="hide">
+			<ul>
+				<li>
+          <a class="menuLink" id="verksamhet" href="#">Länk 1</a>
+        </li>
+				<li>
+          <a class="menuLink" id="contact" href="#">Länk 2</a>
+        </li>
+				<li>
+          <a class="menuLink" id="products" href="#">Länk 3</a>
+        </li>
+			</ul>
+		</nav> -->
+		<div id="board">
+			<div id="player" class="hide"></div>
+		</div>
+		<div id="stepCounter"></div>
+		<div id="room"></div>
+		<div id="response">
+		</div>
+		<!-- <h1>Cluedo</h1> -->
+	</div>
+	
+	<!-- LOCAL JQUERY -->
+	<script src="js/jquery.js"></script>
+
+	<!-- MINIFIED JS -->
+	<script src="js/scripts.min.js"></script>
+	<!--<script type="text/javascript">
+		console.log("Gammal cookie: " + document.cookie);
+		var input = prompt('sätt en kaka');
+		var expireDate = "Thu, 25 Apr 2016";
+		document.cookie = "foo=" + input;
+		document.cookie = "bar=helloworld;";
+		document.cookie = "hej=då;";
+		document.cookie = "men=hejsan;";
+		document.cookie = "name=sture;expires="+expireDate;
+		//foo är inget fast kodord - bara exempel. strängen läses av som key-value-par, vilket innebär att jag kan skapa egna nycklar som förnamn efternamn. man sätter key=value;key=value;
+		//reserverade uttryck är expires, domain, path. domain o path hanterar vilket scoe som gäller för cookien.
+		//secure finns också. secure=secure är att cookien bara skapas vid säker anslutning, tex https://
+		//domian=localhost; exempel domän
+
+		//för att läsa från annan htmlsida tex - den funkar därifrån också, skriv:
+		// tex console.log(document.cookie); 
+		console.log("ny cookie: " + document.cookie);
+	</script>
+	<script type="text/javascript">
+		console.log(document.cookie);
+		var allCookies = document.cookie;
+		var cookieArr = allCookies.split(";");
+		console.log(cookieArr);
+		for (var i = cookieArr.length - 1; i >= 0; i--) {
+			console.log(cookieArr[i]);
+			Finns olika färdiga funktioner i local storage objektet.
+			Tex
+			local.Storage.setItem(’foo’, 2);
+			localStorage.getItem(’foo’);
+			local.Storage.removeItem(’foo’, 2);
+			localStorage.clear();
+			Skapa kan man göra såhär också:
+			localStorage.foobar = ”hej”;
+		}
+	</script> -->
+</body>
+</html>

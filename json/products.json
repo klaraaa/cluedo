@@ -1,0 +1,18 @@
+{
+	"donuts": [
+		{
+			"flavor": "Banana",
+			"price": 10
+		},
+
+		{
+			"flavor": "Strawberry",
+			"price": 15
+		},
+
+		{
+			"flavor": "Chocolate",
+			"price": 20
+		}
+	]
+}
