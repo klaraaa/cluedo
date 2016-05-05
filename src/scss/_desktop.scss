@@ -14,7 +14,7 @@ body{
       margin: 0px auto;
       @include background('../img/board.svg', $boardSize, $boardSize);
       @include divoutline;
-      width: $boardSize
+      width: $boardSize;
       height: $boardSize;
       display: flex;
       flex-direction: row;
