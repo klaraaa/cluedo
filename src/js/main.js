@@ -1,38 +1,24 @@
-var tot = 0;
-var gridSize = 20;
-// var posX = gridSize/2;
-// var posY = gridSize/2;
-var posX = 0;
-var posY = 0;
+var tot = 0, gridSize = 20, posX = 0, posY = 0;
+var grid = [];
 var tools = ['Dagger', 'Candlestick', 'Revolver'];
 var suspects = ['Colonel Mustard', 'Professor Plum', 'Mrs. Peacock'];
 var rooms = ['Hall', 'Kitchen', 'Lounge', 'Library'];
-var weapon;
-var crimescene;
-var killer;
-var playerCards = [];
-var answerCards = [];
-var steps = 0;
-var playing = false;
-var grid = [];
+var weapon, crimescene, killer, keystate;
+var playerCards = [], answerCards = [];
+var steps = 0, playing = false;
+var UpArrow = 38, DownArrow = 40, LeftArrow = 37, RightArrow = 39, DiceKey = 32;
 
-//add Hall value in gridarray
-createRoom('Hall', 'Kitchen', 'Library', 'Lounge'/*, 5, 0*/);
+createRoom('Hall', 'Kitchen', 'Library', 'Lounge');
 
-// //add Library value in gridarray
-// createRoom('Library', 20, 15);
-
-//add Library value in gridarray
-// createRoom('Kitchen', 20, 15);
 var person = {
   name:'klara',
   hint:'tips'
 };
+
 var garderob = {
   name:'jacka',
   name2:'byxor'
 };
-
 
 var kitchen = 
 [
@@ -40,7 +26,6 @@ var kitchen =
     [garderob, person]
   ]
 ];
-
 
 var halldoor = [
   "nyckelhängare",
@@ -72,54 +57,54 @@ var board =
 // console.log("Rum i board: " + board[0][0]);
 // console.log("köket i board: garderob i kök: " + board[0][0][0][0][0]);
 console.log("köket i board: person i kök: tips från " + board[0][0][0][0] + ": " + board[0][0][0][0][0].name);
-function createRoom(room1,room2, room3, room4/* roomEnd, roomStart*/){
-var hallgrid = [
-    ['min X: 0','min Y: 0'],
-    ['max X: 5','max Y: 5']
-];
+function createRoom(room1,room2, room3, room4){
+  var hallgrid = [
+      ['min X: 0','min Y: 0'],
+      ['max X: 5','max Y: 5']
+  ];
 
-var kitchen = [
-    ['kitchen00','kitchen11'],
-    // ['kitchen10','kitchen11']
-];
+  var kitchen = [
+      ['kitchen00','kitchen11'],
+      // ['kitchen10','kitchen11']
+  ];
 
-var library = [
-    ['library00','library11'],
-    // ['library10','library11']
-];
+  var library = [
+      ['library00','library11'],
+      // ['library10','library11']
+  ];
 
-var lounge = [
-    ['lounge00','lounge11'],
-    // ['lounge10','lounge11']
-];
-// hall[0][0] == 'hall';
-// hall[1][1] == 'hall';
+  var lounge = [
+      ['lounge00','lounge11'],
+      // ['lounge10','lounge11']
+  ];
+
+  var board = [
+      [hallgrid,kitchen],
+      [library, lounge]
+  ];
 
 
-var board = [
-    [hallgrid,kitchen],
-    [library, lounge]
-];
-
-// board[0][0] == hall;
-// board[0][1] == kitchen;
-// board[1][0] == library;
-// board[1][1] == lounge;
-console.log("hallen ligger i: " + board[0][0]);
-// console.log(board[0][0][0][0]);
-console.log("hallens max värde har poitionen: " + board[posX][posY]);
+  // hall[0][0] == 'hall';
+  // hall[1][1] == 'hall';
+  // board[0][0] == hall;
+  // board[0][1] == kitchen;
+  // board[1][0] == library;
+  // board[1][1] == lounge;
+  console.log("hallen ligger i: " + board[0][0]);
+  // console.log(board[0][0][0][0]);
+  console.log("hallens max värde har poitionen: " + board[posX][posY]);
 }
 
 function checkRoom(){
   if (playing !== false) {
     if (grid[posX][posY] !== null) {
       $('#room').html('<p>You have reached the ' + grid[posX][posY] + '</p>');
-      $('#guess').removeClass('hide');
-      $('#blame').removeClass('hide');
+      $('#guess').show();
+      $('#blame').show();
     }else{
-      $('#room').html('<p>You are in the corridor, go to a room.</p>');
-      $('#guess').addClass('hide');
-      $('#blame').addClass('hide');
+      $('#room').html('<p>Go to a room.</p>');
+      $('#guess').hide();
+      $('#blame').hide();
     }
   }
 }
@@ -128,105 +113,58 @@ function checkRoom(){
 * This function is run when the document is loaded. Sets everything up.
 **/
 $(document).ready(function() {
+
+  //lyssna på knapptryckningar och lagra keyCode i vår keystate
+  keystate = {};
+  document.addEventListener('keydown', function(evt){
+    keystate[evt.keyCode] = true;
+  });
+  document.addEventListener('keyup', function(evt){
+    delete keystate[evt.keyCode];
+  });
+
   //create new answer and deal cards when start is clicked. playing status to true and show the players marker
   $('#start').on('click', function(){
     if (playing === false) {
       playing = true;
-      $('#player').removeClass('hide');
+      $('#player').show();
       $('#response').append('<p>Nu kan du börja spela!</p>');
       createAnswer();
     }else{
       init();
-      $('#player').addClass('hide');
+      $('#player').hide();
       $('#response').html('<p>Spelet är avslutat.</p>');
     }
   });
 
-    /**
-    * Moves player div depending on keyCode
-    **/
-    $(window).keydown(function(e){
-      // console.log(e.keyCode);
+  /**
+  * Rolls dice and adds random steps
+  **/
+  if (keystate[DiceKey]) {
+    steps = (Math.floor(Math.random()*6)+1);
+    $('#stepCounter').html('<p>Du fick ' + steps + ' slag!</p>');
+  }
 
-      /**
-      * Moves player if there are steps left
-      **/
-      if (steps >= 1 && steps <=6) {
-        /**
-        * Moves player div right if arrow right is pressed
-        **/
-        if (e.keyCode === 39) {
-          if (playing === true) {
-            console.log('du gick höger');
-            posX++;
-            $('#player').css('left', (gridSize * posX) + "px");
-            console.log('position X är nu: ' + posX);
-            steps--;
-            $('#stepCounter').html('<p>steg kvar: ' + steps + '</p>');
-            // console.log('du står i ' + grid[posX][posY]);
-            checkRoom();
-          }
-        }
+  /**
+  * Moves player if there are steps left
+  **/
+  if (steps >= 1 && steps <=6  && playing === true) {
+    if (keystate[RightArrow]) posX++;
+    if (keystate[LeftArrow]) posX--;
+    if (keystate[DownArrow]) posY++;
+    if (keystate[UpArrow]) posY--;
+    
 
-        /**
-        * Moves player div down if arrow down is pressed
-        **/
-        if (e.keyCode === 40) {
-          if (playing === true) {
-            console.log('du gick neråt');
-            posY++;
-            $('#player').css('top', (gridSize * posY) + "px");
-            console.log('position Y är nu: ' + posY);
-            steps--;
-            $('#stepCounter').html('<p>steg kvar: ' + steps + '</p>');
-            // console.log('du står i ' + grid[posX][posY]);
-            checkRoom();
-          }
-        }
+    steps--;
+    checkRoom();
 
-        /**
-        * Moves player div left if arrow left is pressed
-        **/
-        if (e.keyCode === 37) {
-          if (playing === true) {
-            // console.log('du gick vänster');
-            posX--;
-            $('#player').css('left', (gridSize * posX) + "px");
-            // console.log('position X är nu: ' + posX);
-            steps--;
-            $('#stepCounter').html('<p>steg kvar: ' + steps + '</p>');
-            // console.log('du står i ' + grid[posX][posY]);
-            checkRoom();
-          }
-        }
-
-        /**
-        * Moves player div up if arrow up is pressed
-        **/
-        if (e.keyCode === 38) {
-          if (playing === true) {
-            // console.log('du gick uppåt');
-            posY--;
-            $('#player').css('top', (gridSize * posY) + "px");
-            console.log('position Y är nu: ' + posY);
-            steps--;
-            $('#stepCounter').html('<p>steg kvar: ' + steps + '</p>');
-            // console.log('du står i ' + grid[posX][posY]);
-            checkRoom();
-          }
-        }
-      }
-
-      /**
-      * Rolls dice, getting random number of steps when pressing space
-      **/
-      if (e.keyCode === 32) {
-        if (playing === true) {
-          steps = (Math.floor(Math.random()*6)+1);
-          $('#stepCounter').html('<p>Du fick ' + steps + ' slag!</p>');
-        }
-      }
-    });
+    $('#player').css('left', (gridSize * posX) + "px");
+    $('#player').css('top', (gridSize * posY) + "px");
+    $('#stepCounter').html('<p>steg kvar: ' + steps + '</p>');
+    console.log('position X är nu: ' + posX + ' position Y är nu: ' + posY);
+    console.log('du står i ' + grid[posX][posY]);
+  }
+  
 });
 
 /**
@@ -276,7 +214,7 @@ function dealCards(){
   // console.log(suspects, rooms, tools);
   playerCards.push(suspects[suspect], tools[weapon], rooms[room]);
   $('#response').append('<p>Du vet att ' + playerCards[0] + ' är oskyldig, att ' + playerCards[1] + ' inte är mordvapnet och att ' + playerCards[2] + ' inte är brottsplatsen.</p>');
-  console.log(playerCards);
+  // console.log(playerCards);
 
   //remove cards from old arrays
   suspects.splice(suspect, 1);
@@ -284,9 +222,9 @@ function dealCards(){
   rooms.splice(room, 1);
 
   //Debug
-  console.log('Antal mistänkta: ' + suspects.length);
-  console.log('Antal möjliga vapen: ' + tools.length);
-  console.log('Rooms to investigate: ' + rooms.length);
+  // console.log('Antal mistänkta: ' + suspects.length);
+  // console.log('Antal möjliga vapen: ' + tools.length);
+  // console.log('Rooms to investigate: ' + rooms.length);
 }
 
 function init(){
